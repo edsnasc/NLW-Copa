@@ -16,7 +16,7 @@ export default function App() {
     <NativeBaseProvider theme={THEME}>
       <StatusBar 
         barStyle="light-content"
-        backgroundColor= "null"
+        backgroundColor= "transparent"
         translucent
       />
         { fontsLoaded ? <SignIn /> : <Loading /> }
