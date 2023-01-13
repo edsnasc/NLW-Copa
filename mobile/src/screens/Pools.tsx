@@ -55,15 +55,20 @@ export function Pools() {
             </VStack>
             {
                 isLoading ? <Loading /> :
-                <FlatList
-                    data={pools}
-                    keyExtractor={item => item.id}
-                    renderItem={({ item }) => <PoolCard data={item} />}
-                    px={5}
-                    showsVerticalScrollIndicator={false}
-                    _contentContainerStyle={{ pb: 10 }}
-                    ListEmptyComponent={() => <EmptyPoolList />}
-                />
+                    <FlatList
+                        data={pools}
+                        keyExtractor={item => item.id}
+                        renderItem={({ item }) => (
+                            <PoolCard
+                                data={item}
+                                onPress={() => navigate('details', { id: item.id })}
+                            />
+                        )}
+                        px={5}
+                        showsVerticalScrollIndicator={false}
+                        _contentContainerStyle={{ pb: 10 }}
+                        ListEmptyComponent={() => <EmptyPoolList />}
+                    />
             }
         </VStack>
     )
