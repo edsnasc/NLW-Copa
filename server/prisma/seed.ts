@@ -29,7 +29,7 @@ async function main() {
         data: {
             date: '2022-11-02T12:00:00.201Z',
             firstTeamCountryCode: 'DE',
-            SecondTeamCountryCode:'BR',
+            secondTeamCountryCode:'BR',
         }
     })
 
@@ -37,7 +37,7 @@ async function main() {
         data: {
             date:'2022-11-03T12:00:00.201Z',
             firstTeamCountryCode: 'BR',
-            SecondTeamCountryCode: 'AR',
+            secondTeamCountryCode: 'AR',
             
             guesses: {
                 create: {
