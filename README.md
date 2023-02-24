@@ -42,7 +42,7 @@ This project was developed with the following technologies:
 
 <b>Backend</b>
 - [Node js]()
-- [Express]()
+- [Fastify]()
 - [Prisma]()
 
 <b>Frontend</b>
